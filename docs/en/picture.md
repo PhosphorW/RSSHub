@@ -116,6 +116,27 @@ pageClass: routes
 
 <RouteEn name="Daily Strip" author="Maecenas" example="/dilbert/strip" path="/dilbert/strip"/>
 
+## E-Hentai
+
+For RSS content, specify options in the `routeParams` parameter in query string format to control additional functionality
+
+| Key         | Meaning                                                                          | Accepted keys  | Default value |
+| ----------- | -------------------------------------------------------------------------------- | -------------- | ------------- |
+| bittorrent  | Whether include a link to the latest torrent                                     | 0/1/true/false | false         |
+| embed_thumb | Whether the cover image is embedded in the RSS feed rather than given as a link  | 0/1/true/false | false         |
+
+### Favorites
+
+<RouteEn author="yindaheng98" example="/ehentai/favorites/0/posted/1" path="/ehentai/favorites/:favcat?/:order?/:page?/:routeParams?" :paramsDesc="['Favorites folder number','`posted`(Sort by gallery release time) , `favorited`(Sort by time added to favorites)', 'Page number', 'Additional parameters, see the table above']" anticrawler="1" supportBT="1" />
+
+### Tag
+
+<RouteEn author="yindaheng98" example="/ehentai/tag/language:chinese/1" path="/ehentai/tag/:tag/:page?/:routeParams?" :paramsDesc="['Tag', 'Page number', 'Additional parameters, see the table above']" anticrawler="1" supportBT="1" />
+
+### Search
+
+<RouteEn author="yindaheng98" example="/ehentai/search/f_search=artist%3Amana%24/1" path="/ehentai/search/:params?/:page?/:routeParams?" :paramsDesc="['Search parameters. You can copy the content after `https://e-hentai.org/?`', 'Page number', 'Additional parameters, see the table above']" anticrawler="1" supportBT="1" />
+
 ## Elite Babes
 
 ### Home
@@ -187,6 +208,12 @@ For example:
 
 <RouteEn author="hoilc" example="/loveheaven/update/kimetsu-no-yaiba" path="/loveheaven/update/:slug" :paramsDesc="['Manga slug, can be found in URL, including neither `manga-` nor `.html`']" />
 
+## Meituclub
+
+### Latest
+
+<RouteEn author="ocleo1" example="/meituclub/latest" path="/meituclub/latest" />
+
 ## NASA Astronomy Picture of the Day
 
 ### NASA
@@ -213,17 +240,26 @@ For example:
 
 <RouteEn author="MegrezZhu hoilc" example="/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-%22mosaic+censorship%22" path="/nhentai/search/:keyword/:mode?" :paramsDesc="['Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details', 'mode, `simple` to only cover，`detail` to all content, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](/en/install/#route-specific-configurations), default to `simple`']" anticrawler="1" supportBT="1"/>
 
+## Rare Historical Photos
+
+### Home
+
+<RouteEn author="TonyRL" example="/rarehistoricalphotos" path="/rarehistoricalphotos" radar="1"/>
+
 ## Tits Guru
 
 ### Home
 
 <RouteEn author="MegrezZhu" example="/tits-guru/home" path="/tits-guru/home"/>
+
 ### Daily Best
 
 <RouteEn author="MegrezZhu" example="/tits-guru/daily" path="/tits-guru/daily"/>
+
 ### Models
 
 <RouteEn author="MegrezZhu" example="/tits-guru/model/mila-azul" path="/tits-guru/model/:name" :paramsDesc="['Module name, see [here](https://tits-guru.com/models) for details']"/>
+
 ### Categories
 
 <RouteEn author="MegrezZhu" example="/tits-guru/category/bikini" path="/tits-guru/category/:type" :paramsDesc="['Category, see [here](https://tits-guru.com/categories) for details']"/>
@@ -263,6 +299,12 @@ The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpa
 :::
 
 </RouteEn>
+
+## WallpaperHub
+
+### Wallpapers
+
+<RouteEn author="nczitzk" example="/wallpaperhub" path="/wallpaperhub" radar="1" rssbud="1"/>
 
 ## yande.re
 
