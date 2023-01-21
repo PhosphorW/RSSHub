@@ -1524,6 +1524,9 @@
     "/google/fonts/:sort?": [
         "Fatpandac"
     ],
+    "/google/news/:category/:locale": [
+        "zoenglinghou"
+    ],
     "/google/scholar/:query": [
         "HenryQW"
     ],
@@ -1776,6 +1779,9 @@
     "/guancha/topic/:id/:order?": [
         "occupy5",
         "nczitzk"
+    ],
+    "/guandian/:category": [
+        "drgnchan"
     ],
     "/guangdiu/rank": [
         "fatpandac"
@@ -2571,6 +2577,9 @@
     ],
     "/line/today/:edition?/:tab?": [
         "nczitzk"
+    ],
+    "/linkedin/jobs": [
+        "BrandNewLifeJackie26"
     ],
     "/linkresearcher/:params": [
         "yech1990"
@@ -4218,6 +4227,9 @@
     "/unusualwhales/news": [
         "TonyRL"
     ],
+    "/uptimerobot/rss/:id/:routeParams?": [
+        "Rongronggg9"
+    ],
     "/uraaka-joshi/": [
         "SettingDust",
         "Halcao"
@@ -5672,7 +5684,6 @@
     "/hackerone/hacktivity": [],
     "/hackerone/search/:search": [],
     "/cowlevel/element/:id": [],
-    "/google/news/:category/:locale": [],
     "/p-articles/section/:section": [],
     "/p-articles/contributors/:author": [],
     "/haohaozhu/whole-house/:keyword?": [],
