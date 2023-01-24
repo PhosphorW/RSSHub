@@ -5197,6 +5197,18 @@
       }
     ]
   },
+  "famitsu.com": {
+    "_name": "ファミ通",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/game.html#ファミ-tong",
+        "source": [
+          "/search"
+        ]
+      }
+    ]
+  },
   "fantia.jp": {
     "_name": "Fantia",
     ".": [
@@ -18517,6 +18529,27 @@
         "docs": "https://docs.rsshub.app/social-media.html#xiao-hong-shu",
         "source": "/board/:board_id",
         "target": "/xiaohongshu/board/:board_id"
+      }
+    ]
+  },
+  "xiaomiyoupin.com": {
+    "_name": "小米有品",
+    ".": [
+      {
+        "title": "小米有品众筹",
+        "docs": "https://docs.rsshub.app/shopping.html#xiao-mi-you-pin-xiao-mi-you-pin-zhong-chou",
+        "source": [
+          "/"
+        ],
+        "target": "/xiaomiyoupin/crowdfunding"
+      },
+      {
+        "title": "小米有品每日上新",
+        "docs": "https://docs.rsshub.app/shopping.html#xiao-mi-you-pin-xiao-mi-you-pin-mei-ri-shang-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/xiaomiyoupin/latest"
       }
     ]
   },
