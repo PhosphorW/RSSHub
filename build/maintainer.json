@@ -1528,6 +1528,9 @@
     "/github/user/followers/:user": [
         "HenryQW"
     ],
+    "/github/wiki/:user/:repo/:page?": [
+        "TonyRL"
+    ],
     "/gitpod/blog": [
         "TonyRL"
     ],
@@ -1775,6 +1778,9 @@
     ],
     "/gov/taiyuan/rsj/:caty/:page?": [
         "2PoL"
+    ],
+    "/gov/wuhan/sy/whyw": [
+        "nczitzk"
     ],
     "/gov/xinyi/:path+": [
         "ShuiHuo"
