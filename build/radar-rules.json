@@ -3826,6 +3826,16 @@
       }
     ]
   },
+  "crac.org.cn": {
+    "_name": "中国无线电协会业余无线电分会",
+    "www": [
+      {
+        "title": "最新资讯",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-wu-xian-dian-xie-hui-ye-yu-wu-xian-dian-fen-hui",
+        "source": "/News/List"
+      }
+    ]
+  },
   "creative-comic.tw": {
     "_name": "CCC 創作集",
     ".": [
@@ -19525,6 +19535,19 @@
           "/"
         ],
         "target": "/xyzrank/new-podcasts"
+      }
+    ]
+  },
+  "yahoo.com": {
+    "_name": "Yahoo",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#yahoo",
+        "source": [
+          "/"
+        ],
+        "target": "/yahoo/news/:region/:category?"
       }
     ]
   },
