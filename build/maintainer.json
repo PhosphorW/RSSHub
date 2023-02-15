@@ -963,6 +963,18 @@
     "/creative-comic/book/:id/:coverOnly?/:quality?": [
         "TonyRL"
     ],
+    "/crossbell/notes": [
+        "DIYgod"
+    ],
+    "/crossbell/notes/character/:characterId": [
+        "DIYgod"
+    ],
+    "/crossbell/notes/source/:source": [
+        "DIYgod"
+    ],
+    "/crossbell/feeds/following/:characterId": [
+        "DIYgod"
+    ],
     "/csc/notice/:type?": [
         "Derekmini"
     ],
@@ -4937,6 +4949,10 @@
     "/yunspe/newsflash": [
         "x2009again"
     ],
+    "/yuque/:name/:book": [
+        "aha2mao",
+        "ltaoo"
+    ],
     "/yxdown/news/:category?": [
         "nczitzk"
     ],
@@ -5010,6 +5026,9 @@
     ],
     "/zhibo8/forum/:id": [
         "LogicJake"
+    ],
+    "/zhibo8/luxiang/:category?": [
+        "TonyRL"
     ],
     "/zhibo8/more/:category?": [
         "nczitzk"
@@ -5607,7 +5626,6 @@
     "/curseforge/:gameid/:catagoryid/:projectid/files": [],
     "/swufe/seie/:type?": [],
     "/wired/tag/:tag": [],
-    "/yuque/doc/:repo_id": [],
     "/enclavebooks/category/:id?": [],
     "/enclavebooks/user/:uid": [],
     "/enclavebooks/collection/:uid": [],

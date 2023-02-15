@@ -4056,6 +4056,28 @@
       }
     ]
   },
+  "crossbell.io": {
+    "_name": "Crossbell",
+    ".": [
+      {
+        "title": "Notes",
+        "docs": "https://docs.rsshub.app/social-media.html#crossbell",
+        "source": "/*",
+        "target": "/notes"
+      }
+    ]
+  },
+  "xlog.app": {
+    "_name": "xLog",
+    ".": [
+      {
+        "title": "Notes",
+        "docs": "https://docs.rsshub.app/social-media.html#crossbell",
+        "source": "/*",
+        "target": "/notes/source/xlog"
+      }
+    ]
+  },
   "csc.edu.cn": {
     "_name": "国家留学网",
     "www": [
@@ -20130,6 +20152,19 @@
       }
     ]
   },
+  "yuque.com": {
+    "_name": "语雀",
+    ".": [
+      {
+        "title": "知识库",
+        "docs": "https://docs.rsshub.app/study.html#yu-que",
+        "source": [
+          ":name/:book"
+        ],
+        "target": "/yuque/:name/:book"
+      }
+    ]
+  },
   "yxdown.com": {
     "_name": "游讯网",
     ".": [
@@ -20503,6 +20538,16 @@
   },
   "zhibo8.cc": {
     "_name": "直播吧",
+    ".": [
+      {
+        "title": "录像",
+        "docs": "https://docs.rsshub.app/multimedia.html#zhi-bo-ba",
+        "source": [
+          "/:category/luxiang.htm"
+        ],
+        "target": "/zhibo8/luxiang/:category"
+      }
+    ],
     "bbs": [
       {
         "title": "子论坛",
@@ -21594,18 +21639,6 @@
         "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
         "source": "/ipo/iss/featured-stories",
         "target": "/umass/amherst/ipostories"
-      }
-    ]
-  },
-  "yuque.com": {
-    "_name": "语雀",
-    "www": [
-      {
-        "title": "知识库",
-        "docs": "https://docs.rsshub.app/study.html#yu-que",
-        "source": [
-          "/:space/:book"
-        ]
       }
     ]
   },

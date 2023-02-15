@@ -2200,6 +2200,16 @@
         docs:"https://docs.rsshub.app/anime.html#ccc-chuang-zuo-ji",
         source:[ "/book/:id/*" ],
         target:"/creative-comic/:id" } ] },
+  "crossbell.io":{ _name:"Crossbell",
+    ".":[ { title:"Notes",
+        docs:"https://docs.rsshub.app/social-media.html#crossbell",
+        source:"/*",
+        target:"/notes" } ] },
+  "xlog.app":{ _name:"xLog",
+    ".":[ { title:"Notes",
+        docs:"https://docs.rsshub.app/social-media.html#crossbell",
+        source:"/*",
+        target:"/notes/source/xlog" } ] },
   "csc.edu.cn":{ _name:"国家留学网",
     www:[ { title:"遴选通知",
         docs:"https://docs.rsshub.app/other.html#guo-jia-liu-xue-wang",
@@ -11014,6 +11024,11 @@
           "/newsflashes",
           "/" ],
         target:"/yunspe/newsflashes" } ] },
+  "yuque.com":{ _name:"语雀",
+    ".":[ { title:"知识库",
+        docs:"https://docs.rsshub.app/study.html#yu-que",
+        source:[ ":name/:book" ],
+        target:"/yuque/:name/:book" } ] },
   "yxdown.com":{ _name:"游讯网",
     ".":[ { title:"资讯",
         docs:"https://docs.rsshub.app/game.html#you-xun-wang",
@@ -11219,6 +11234,10 @@
         source:[ "/:category/" ],
         target:"/zhangyoubao/:category" } ] },
   "zhibo8.cc":{ _name:"直播吧",
+    ".":[ { title:"录像",
+        docs:"https://docs.rsshub.app/multimedia.html#zhi-bo-ba",
+        source:[ "/:category/luxiang.htm" ],
+        target:"/zhibo8/luxiang/:category" } ],
     bbs:[ { title:"子论坛",
         docs:"https://docs.rsshub.app/bbs.html#zhi-bo-ba",
         source:[ "/" ],
@@ -11923,22 +11942,6 @@
         docs:"http://docs.rsshub.app/en/university.html#umass-amherst",
         source:"/ipo/iss/featured-stories",
         target:"/umass/amherst/ipostories" } ] },
-  "yuque.com":{ _name:"语雀",
-    www:[ { title:"知识库",
-        docs:"https://docs.rsshub.app/study.html#yu-que",
-        source:[ "/:space/:book" ],
-        target:(params, url, document) => {
-                    const match = document.documentElement.innerHTML.match(/JSON\.parse\(decodeURIComponent\("(.*)"\)/);
-                    if (match && match[1]) {
-                        const dataStr = match[1];
-                        try {
-                            const appData = JSON.parse(decodeURIComponent(dataStr));
-                            return `/yuque/doc/${appData.book.id}`;
-                        } catch (e) {
-                            // pass
-                        }
-                    }
-                } } ] },
   "bjeea.com":{ _name:"北京考试院",
     www:[ { title:"首页 / 通知公告",
         docs:"https://docs.rsshub.app/government.html#bei-jing-jiao-yu-kao-shi-yuan",
