@@ -20678,6 +20678,17 @@
   },
   "youtube.com": {
     "_name": "YouTube",
+    "charts": [
+      {
+        "title": "音乐排行榜",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": [
+          "/charts/:category/:country/*",
+          "/charts/:category/:country",
+          "/charts/:category"
+        ]
+      }
+    ],
     "www": [
       {
         "title": "用户",
@@ -20696,6 +20707,17 @@
         "docs": "https://docs.rsshub.app/social-media.html#youtube",
         "source": "/c/:id",
         "target": "/youtube/c/:id"
+      },
+      {
+        "title": "社群",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": [
+          "/channel/:handle/community",
+          "/channel/:handle",
+          "/:handle/community",
+          "/:handle/featured",
+          "/:handle"
+        ]
       },
       {
         "title": "播放列表",
