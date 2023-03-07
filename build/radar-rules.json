@@ -17314,6 +17314,20 @@
       }
     ]
   },
+  "snowpeak.com": {
+    "_name": "Snow Peak",
+    ".": [
+      {
+        "title": "New Arrivals(USA)",
+        "docs": "https://docs.rsshub.app/shopping.html#snow-peak",
+        "source": [
+          "/collections/new-arrivals",
+          "/"
+        ],
+        "target": "/snowpeak/us/new-arrivals"
+      }
+    ]
+  },
   "sobooks.net": {
     "_name": "SoBooks",
     ".": [
@@ -17494,6 +17508,19 @@
           "/"
         ],
         "target": "/solidot/story"
+      }
+    ]
+  },
+  "sony.com": {
+    "_name": "Sony",
+    ".": [
+      {
+        "title": "Software Downloads",
+        "docs": "https://docs.rsshub.app/program-update.html#sony",
+        "source": [
+          "/electronics/support/:productType/:productId/downloads"
+        ],
+        "target": "/sony/downloads/:productType/:productId"
       }
     ]
   },
@@ -20525,6 +20552,18 @@
           "/"
         ],
         "target": "/xmnn/epaper/:id"
+      }
+    ]
+  },
+  "xsijishe.com": {
+    "_name": "司机社",
+    ".": [
+      {
+        "title": "论坛",
+        "docs": "https://docs.rsshub.app/bbs.html#si-ji-she",
+        "source": [
+          "/*"
+        ]
       }
     ]
   },

@@ -4140,6 +4140,9 @@
     "/smzdm/ranking/:rank_type/:rank_id/:hour": [
         "DIYgod"
     ],
+    "/snowpeak/us/new-arrivals": [
+        "NavePnow"
+    ],
     "/sobooks/tag/:id?": [
         "nczitzk"
     ],
@@ -4156,6 +4159,9 @@
         "sgqy",
         "hang333",
         "TonyRL"
+    ],
+    "/sony/downloads/:productType/:productId": [
+        "NavePnow"
     ],
     "/soundofhope/:channel/:id": [
         "Fatpandac"
@@ -5045,6 +5051,9 @@
     ],
     "/xmnn/epaper/:id?": [
         "nczitzk"
+    ],
+    "/xsijishe/forum/:fid": [
+        "akynazh"
     ],
     "/xueqiu/column/:id": [
         "TonyRL"

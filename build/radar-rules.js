@@ -9489,6 +9489,12 @@
         docs:"https://docs.rsshub.app/shopping.html#shen-me-zhi-de-mai",
         source:"/member/:uid/baoliao",
         target:"/smzdm/baoliao/:uid" } ] },
+  "snowpeak.com":{ _name:"Snow Peak",
+    ".":[ { title:"New Arrivals(USA)",
+        docs:"https://docs.rsshub.app/shopping.html#snow-peak",
+        source:[ "/collections/new-arrivals",
+          "/" ],
+        target:"/snowpeak/us/new-arrivals" } ] },
   "sobooks.net":{ _name:"SoBooks",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/reading.html#sobooks",
@@ -9564,6 +9570,11 @@
         docs:"https://docs.rsshub.app/traditional-media.html#solidot",
         source:[ "/" ],
         target:"/solidot/story" } ] },
+  "sony.com":{ _name:"Sony",
+    ".":[ { title:"Software Downloads",
+        docs:"https://docs.rsshub.app/program-update.html#sony",
+        source:[ "/electronics/support/:productType/:productId/downloads" ],
+        target:"/sony/downloads/:productType/:productId" } ] },
   "soundofhope.org":{ _name:"希望之声",
     ".":[ { title:"频道",
         docs:"https://docs.rsshub.app/traditional-media.html#xi-wang-zhi-sheng",
@@ -11192,6 +11203,17 @@
         source:[ "/:id",
           "/" ],
         target:"/xmnn/epaper/:id" } ] },
+  "xsijishe.com":{ _name:"司机社",
+    ".":[ { title:"论坛",
+        docs:"https://docs.rsshub.app/bbs.html#si-ji-she",
+        source:[ "/*" ],
+        target:(_, url) => {
+                    const re = /forum-(\d+)-/;
+                    const res = re.exec(url);
+                    if (res) {
+                        return `/xsijishe/forum/${res[1]}`;
+                    }
+                } } ] },
   "danjuanapp.com":{ _name:"雪球",
     ".":[ { title:"蛋卷基金净值更新",
         docs:"https://docs.rsshub.app/finance.html#xue-qiu",
