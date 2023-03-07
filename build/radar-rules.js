@@ -889,6 +889,16 @@
         source:[ "/",
           "/html/:category?/:topic?" ],
         target:"/ally/rail/:category?/:topic?" } ] },
+  "amazon.com":{ _name:"Amazon",
+    ".":[ { title:"Kindle 软件更新",
+        docs:"https://docs.rsshub.app/program-update.html#amazon",
+        source:[ "/gp/help/customer/display.html" ],
+        target:(_, url) => {
+                    const nodeId = new URL(url).searchParams.get('nodeId');
+                    if (nodeId === 'GKMQC26VQQMM8XSW') {
+                        return '/amazon/kindle/software-updates';
+                    }
+                } } ] },
   "android.com":{ _name:"Android Developers",
     developer:[ { title:"SDK Platform Tools release notes",
         docs:"https://docs.rsshub.app/program-update.html#android-sdk-platform-tools-release-notes",
@@ -2140,6 +2150,20 @@
         docs:"https://docs.rsshub.app/other.html#clickme",
         source:[ "/:grouping/:name" ],
         target:(params) => `/clickme/r18/${params.grouping === 't' ? 'tag' : 'category'}/${params.name}` } ] },
+  "cls.cn":{ _name:"财联社",
+    ".":[ { title:"电报",
+        docs:"https://docs.rsshub.app/finance.html#cai-lian-she",
+        sources:[ "/telegraph",
+          "/" ],
+        target:"/cls/telegraph" },
+      { title:"深度",
+        docs:"https://docs.rsshub.app/finance.html#cai-lian-she",
+        sources:[ "/depth" ],
+        target:(_, url) => `/cls/depth/${new URL(url).searchParams.get('id')}` },
+      { title:"热门文章排行榜",
+        docs:"https://docs.rsshub.app/finance.html#cai-lian-she",
+        sources:[ "/" ],
+        target:"/cls/hot" } ] },
   "cmde.org.cn":{ _name:"国家药品监督管理局医疗器械技术审评中心",
     www:[ { title:"通用",
         docs:"https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju-yi-liao-qi-xie-ji-shu-shen-ping-zhong-xin",
