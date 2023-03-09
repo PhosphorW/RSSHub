@@ -1085,7 +1085,12 @@
     ".":[ { title:"新发布",
         docs:"https://docs.rsshub.app/shopping.html#arcteryx",
         source:[ "/:country/en/c/:gender/new-arrivals" ],
-        target:"/arcteryx/new-arrivals/:country/:gender" } ] },
+        target:"/arcteryx/new-arrivals/:country/:gender" } ],
+    regear:[ { title:"Regear 新发布",
+        docs:"https://docs.rsshub.app/shopping.html#arcteryx",
+        source:[ "/shop/new-arrivals",
+          "/" ],
+        target:"/arcteryx/regear/new-arrivals" } ] },
   "arknights.jp":{ _name:"明日方舟",
     ak:[ { title:"アークナイツ（日服新闻）",
         docs:"https://docs.rsshub.app/game.html#ming-ri-fang-zhou",
@@ -8220,6 +8225,21 @@
         docs:"https://docs.rsshub.app/finance.html#paradigm",
         source:[ "/writing" ],
         target:"/paradigm/writing" } ] },
+  "patagonia.com":{ _name:"Patagonia",
+    ".":[ { title:"New Arrivals",
+        docs:"https://docs.rsshub.app/shopping.html#patagonia",
+        source:[ "/shop/*new-arrivals" ],
+        target:(_, url) => {
+                    const param = new URL(url).pathname.split('/').pop().replace('-new-arrivals', '');
+                    if (param === 'new-arrivals') {
+                        return '';
+                    }
+                    if (param === 'kids-baby') {
+                        return '/patagonia/new-arrivals/kids';
+                    } else {
+                        return `/patagonia/new-arrivals/${param}`;
+                    }
+                } } ] },
   "penguinrandomhouse.com":{ _name:"Penguin Random House",
     ".":[ { title:"Penguin Random House Book Lists",
         docs:"https://docs.rsshub.app/reading.html#penguin-random-house",
